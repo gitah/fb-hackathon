@@ -13,7 +13,7 @@ var TitleSlide = React.createClass({
         <div class="slide">
             <h1 id="appTitle">Postcard Maker</h1>
             <LocationBox></LocationBox>
-            <Button>next</Button>
+            <div id="btnRight"><Button>next</Button></div>
         </div>
     );
   }

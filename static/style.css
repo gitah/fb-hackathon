@@ -22,11 +22,10 @@ margin-bottom:50px;
 	margin-right:10px;
 }
 
-#locationBox .wrongLocBtn{
+#locationBox #wrongLocBtn{
 	background:none;
 	text-decoration: underline;
 }
-
 
 /*Picture Selector*/
 .selectorImage {
@@ -43,5 +42,11 @@ margin-bottom:50px;
     width: 400px;
     height: 400px;
     margin: 0 auto
+
+
+.btnRight{
+	background-color: red;
+	text-align: right;
+	margin-right: 20px;
 }
 
