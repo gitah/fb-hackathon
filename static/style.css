@@ -12,6 +12,7 @@
 margin-bottom:50px;
 }
 
+/*Location Box*/
 #locationBox{
 	margin-bottom:100px;
 }
@@ -27,4 +28,20 @@ margin-bottom:50px;
 }
 
 
+/*Picture Selector*/
+.selectorImage {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.selectorImage:hover {
+    border: 1px solid red;
+}
+
+.mainPicture {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto
+}
 

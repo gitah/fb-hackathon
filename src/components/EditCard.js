@@ -9,9 +9,13 @@ var EditCard = React.createClass({
     return this.transferPropsTo(
         <div>
             <div class="stampSelector">Stamp Selector</div>
-            <textarea class="taContent"></textarea>
-            <textarea class="taTo"></textarea>
-            <textarea class="taFrom"></textarea>
+            <div class="main">
+                <textarea class="taContent"></textarea>
+            </div>
+            <div class="side">
+                <textarea class="taFrom"></textarea>
+                <textarea class="taTo"></textarea>
+            </div>
         </div>
     );
   }

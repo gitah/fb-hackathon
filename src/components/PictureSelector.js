@@ -38,10 +38,10 @@ var PictureSelector = React.createClass({
 
     return this.transferPropsTo(
         <div>
-            <div class="MainPicture">
+            <div class="mainPicture">
                 <img src={this.state.currentImage}></img> 
             </div>
-            <div class="Selector">{foo}</div>
+            <div class="selector">{foo}</div>
         </div>
     );
   }
