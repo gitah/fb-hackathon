@@ -1,4 +1,7 @@
 fb-hackathon
 ============
+For Facebook React.js hackathon
 
-for hackathon
+Fred Song
+Renji Yu
+Tina Chen
