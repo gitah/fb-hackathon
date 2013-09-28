@@ -5,7 +5,7 @@
   "repository": "",
   "devDependencies": {
     "browserify": "~2.31.0",
-    "reactify": "~0.3.1",
+    "reactify": "petehunt/reactify",
     "watchify": "~0.1.0"
   },
   "scripts": {

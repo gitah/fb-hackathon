@@ -6,9 +6,7 @@ var Button = React.createClass({
   },
 
   render: function() {
-    return this.transferPropsTo(
-        <a role="button" class="btn">{this.props.children}</a>
-    );
+    return this.transferPropsTo(<a role="button" class="btn">{this.props.children}</a>);
   }
 });
 
