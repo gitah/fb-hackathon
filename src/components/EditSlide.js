@@ -16,8 +16,10 @@ var EditSlide = React.createClass({
             <div class="slide">
                 <EditCard></EditCard>
                 <StampSelector></StampSelector>
-                <Button>Design</Button>
-                <Button>Send</Button>
+                <div>    
+                    <Button class="btnLeft">Design</Button>
+                    <Button class="btnLeft">Send</Button>
+                </div>
             </div>
         );
     }

@@ -8,14 +8,18 @@ var EditCard = React.createClass({
   render: function() {
     return this.transferPropsTo(
         <div>
-            <div class="stampSelector">Stamp Selector</div>
+                        
             <div class="main">
-                <textarea class="taContent"></textarea>
+                <textarea class="ContentTA"></textarea>
             </div>
-            <div class="side">
-                <textarea class="taFrom"></textarea>
-                <textarea class="taTo"></textarea>
+            
+
+          <div class="side">
+                <div class="stampSelector">Stamp Selector</div>
+                <textarea class="blockTA"></textarea>
+                <textarea class="blockTA"></textarea>
             </div>
+
         </div>
     );
   }
