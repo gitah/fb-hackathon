@@ -4,4 +4,27 @@
 
 .slide {
     border: 2px solid black;
+    margin:20px;
+    text-align: center;
 }
+
+#appTitle{
+margin-bottom:50px;
+}
+
+#locationBox{
+	margin-bottom:100px;
+}
+
+#locationBox #locationText{
+	display: inline;
+	margin-right:10px;
+}
+
+#locationBox .wrongLocBtn{
+	background:none;
+	text-decoration: underline;
+}
+
+
+

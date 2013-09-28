@@ -11,7 +11,7 @@ var TitleSlide = React.createClass({
   render: function() {
     return this.transferPropsTo(
         <div class="slide">
-            <h1>Postcard Maker</h1>
+            <h1 id="appTitle">Postcard Maker</h1>
             <LocationBox></LocationBox>
             <Button>next</Button>
         </div>

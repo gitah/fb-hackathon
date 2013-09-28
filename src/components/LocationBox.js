@@ -15,9 +15,9 @@ var LocationBox = React.createClass({
     render: function() {
         // TODO: create popup, new component
         return (
-            <div>
-                <div>You are at {this.getLocation()}</div>
-                <Button>Wrong Location?</Button>
+            <div id="locationBox">
+                <div id="locationText">You are at {this.getLocation()}</div>
+                <Button id="wrongLocBtn">Wrong Location?</Button>
             </div>
         );
     }
