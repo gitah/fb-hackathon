@@ -42,11 +42,36 @@ margin-bottom:50px;
     width: 400px;
     height: 400px;
     margin: 0 auto
+}
 
 
 .btnRight{
 	background-color: red;
 	text-align: right;
 	margin-right: 20px;
+}
+
+.main{
+	display:inline-block;
+	margin-right:20px;
+}
+
+.stampSelector{
+	margin-bottom:20px;
+	background-color: red;
+}
+
+.side{
+	display:inline-block;
+}
+
+.blockTA{
+	display:block;
+	margin-bottom:10px;
+}
+
+.ContentTA{
+	width:500px;
+	height:400px;
 }
 
