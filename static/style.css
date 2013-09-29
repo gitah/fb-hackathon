@@ -145,9 +145,10 @@ margin-bottom:50px;
 	margin-bottom:50px;
 }
 
-.nextBtn{
-	margin-left:1000px;
-	margin-top:600px;
+.navButtons{
+    position: absolute;
+    margin-left:1100px;
+    margin-top:530px;
 }
 
 .btnLeft{
