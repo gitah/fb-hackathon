@@ -17,7 +17,7 @@ var LocationBox = React.createClass({
         return (
             <div id="locationBox">
                 <div id="locationText">You are at {this.getLocation()}</div>
-                <Button id="wrongLocBtn">Wrong Location?</Button>
+                <Button class="linkBtn">Wrong Location?</Button>
             </div>
         );
     }

@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-
+var StampSelector = require('../components/StampSelector');
 var EditCard = React.createClass({
   getDefaultProps: function() {
     return {href: 'javascript:;'};
@@ -7,18 +7,17 @@ var EditCard = React.createClass({
 
   render: function() {
     return this.transferPropsTo(
-        <div>
+        <div class="content">
                         
-            <div class="main">
+             <div class="main">
                 <textarea class="ContentTA"></textarea>
-            </div>
-            
-
-          <div class="side">
-                <div class="stampSelector">Stamp Selector</div>
+             </div>  
+                
+            <div class="side">
+                <div class="stampSelector"><StampSelector></StampSelector></div>
                 <textarea class="blockTA"></textarea>
                 <textarea class="blockTA"></textarea>
-            </div>
+             </div>
 
         </div>
     );

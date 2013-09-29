@@ -1,8 +1,30 @@
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-moz-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-o-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@-ms-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+@keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+
+
 .content {
   padding-top: 55px;
 }
 
-.slide {
+.slide{
     border: 2px solid black;
     margin:20px;
     text-align: center;
@@ -22,12 +44,15 @@ margin-bottom:50px;
 	margin-right:10px;
 }
 
-#locationBox #wrongLocBtn{
+#locationBox .linkBtn{
 	background:none;
 	text-decoration: underline;
+	border:none;
+	font-size:12px;
+	color:blue;
 }
 
-/*Picture Selector*/
+/*DesignSlide*/
 .selectorImage {
     width: 80px;
     height: 80px;
@@ -41,29 +66,29 @@ margin-bottom:50px;
 .mainPicture {
     width: 400px;
     height: 400px;
-    margin: 0 auto
+    margin: 20px auto;
 }
 
 
-.btnRight{
-	background-color: red;
-	text-align: right;
-	margin-right: 20px;
-}
+
+/*EditSlide*/
 
 .main{
 	display:inline-block;
 	margin-right:20px;
+	height:450px;
 }
 
 .stampSelector{
-	margin-bottom:20px;
-	background-color: red;
+	margin-bottom:50px;
 }
 
 .side{
 	display:inline-block;
+	height:450px;
+	padding-top:50px;
 }
+
 
 .blockTA{
 	display:block;
@@ -73,5 +98,34 @@ margin-bottom:50px;
 .ContentTA{
 	width:500px;
 	height:400px;
+}
+
+
+#selectedImg{
+	width:150px;
+	height:150px;
+}
+
+/*All Pages*/
+
+
+*{
+	box-sizing: border-box;
+}
+
+.buttons{
+	margin-bottom:50px;
+}
+
+.btnLeft{
+	margin-right:500px;
+}
+
+.btnRight{
+	margin-left:500px;
+}
+
+#btnChoose{
+	margin-left:1000px;
 }
 

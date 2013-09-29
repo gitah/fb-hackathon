@@ -2,7 +2,6 @@
 
 var EditCard = require('../components/EditCard')
 var Button = require('../components/Button');
-var StampSelector = require('../components/StampSelector');
 
 var EditSlide = React.createClass({
     getDefaultProps: function() {
@@ -15,10 +14,9 @@ var EditSlide = React.createClass({
         return (
             <div class="slide">
                 <EditCard></EditCard>
-                <StampSelector></StampSelector>
-                <div>    
+                <div class="buttons">    
                     <Button class="btnLeft">Design</Button>
-                    <Button class="btnLeft">Send</Button>
+                    <Button class="btnRight">Send</Button>
                 </div>
             </div>
         );

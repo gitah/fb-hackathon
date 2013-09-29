@@ -31,7 +31,7 @@ var StampSelector = React.createClass({
   render: function() {
     return (
         <div class="stampSelector">
-            <img src={this.state.currentImage} onClick={this.toggleCurrentImage}></img>
+            <img id="selectedImg" src={this.state.currentImage} onClick={this.toggleCurrentImage}></img>
         </div>
     );
   }
