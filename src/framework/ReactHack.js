@@ -32,12 +32,6 @@ var ReactHack = {
       backboneMethods[routeName] = handleRouteChange.bind(this, routeComponentClass);
     }
 
-    // Set up default (error) route
-    backboneRoutes['*default'] = 'fourohfour';
-    backboneMethods['fourohfour'] = function() {
-      React.renderComponent(<h1>ReactHack route not found.</h1>, document.body);
-    };
-
     backboneMethods.routes = backboneRoutes;
 
     var AppRouter = Parse.Router.extend(backboneMethods);
