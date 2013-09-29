@@ -3,12 +3,14 @@
 /** @jsx React.DOM */
 
 var Button = require('../components/Button');
+var Spinner = require('../components/Spinner');
 
 var LocationBox = React.createClass({
     getInitialState: function(){
         return{
+            loading: true,
             lat: 0,
-            lng: 0,
+            lng: 0
        };
    },
 
@@ -18,25 +20,28 @@ var LocationBox = React.createClass({
     
 
     componentDidMount: function() {
+        locBoxThis = this;
         navigator.geolocation.getCurrentPosition(function(position){
-            this.setState({lat : position.coords.latitude});
-            this.setState({lng : position.coords.longitude});
-            alert(this.state.lat);
-            alert('foo');
+            locBoxThis.setState({lat : position.coords.latitude});
+            locBoxThis.setState({lng : position.coords.longitude});
+            locBoxThis.setState({loading : false});
         });
-        alert('test');
         //TODO:send this to sever
         //return "Seattle, WA"+lat+" "+lng
     },
 
     render: function() {
         // TODO: create popup, new component
-        return (
-            <div id="locationBox">
-                <div id="locationText">You are at {this.state.lat}, {this.state.lng}</div>
-                <Button id="wrongLocBtn">Wrong Location?</Button>
-            </div>
-        );
+        if(this.state.loading) {
+            return <Spinner />;
+        } else {
+            return (
+                <div id="locationBox">
+                    <div id="locationText">You are at {this.state.lat}, {this.state.lng}</div>
+                    <Button id="wrongLocBtn">Wrong Location?</Button>
+                </div>
+            );
+        }
     }
 });
 
