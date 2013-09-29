@@ -42,6 +42,32 @@
 	transition: all .6s ease-in-out;
 }
 
+#DesignSlide {
+   position: absolute;
+  -webkit-backface-visibility: hidden ;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+}
+
+#EditSlide {
+  -webkit-backface-visibility: hidden ;
+  position: absolute;
+}
+
+.flipSlidesContainer {
+    -webkit-perspective: 800;
+}
+
+.flipSlides {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 1.0s linear;
+}
+
+/*.slide .flipped {*/
+  /*-webkit-transform: rotatex(-180deg);*/
+/*}*/
+
 /*.transit{
 	width: 98%;
 	min-height: 70%;
@@ -124,8 +150,8 @@ margin-bottom:50px;
 }
 
 .ContentTA{
-	width:500px;
-	height:400px;
+	width:100px;
+	height:100px;
 }
 
 
