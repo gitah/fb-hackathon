@@ -11,13 +11,9 @@ var EditSlide = React.createClass({
     
     render: function() {
         // TODO: create popup, new component
-        return (
+        return this.transferPropsTo(
             <div class="slide" id="EditSlide">
                 <EditCard></EditCard>
-                <div class="buttons">    
-                    <Button class="btnLeft">Design</Button>
-                    <Button class="btnRight">Send</Button>
-                </div>
             </div>
         );
     }
