@@ -10,7 +10,10 @@ var LocationBox = React.createClass({
         return{
             loading: true,
             lat: 0,
-            lng: 0
+            lng: 0,
+            city: 'City',
+            country: 'County',
+            postal_code: 'Zipcode'
        };
    },
 
@@ -24,7 +27,6 @@ var LocationBox = React.createClass({
         navigator.geolocation.getCurrentPosition(function(position){
             locBoxThis.setState({lat : position.coords.latitude});
             locBoxThis.setState({lng : position.coords.longitude});
-            locBoxThis.setState({loading : false});
             locBoxThis.getCity(locBoxThis.state.lat, locBoxThis.state.lng);
         });
         //TODO:send this to sever
@@ -34,7 +36,29 @@ var LocationBox = React.createClass({
     getCity: function(lat, lng) {
         // make API call via jquery
         // $.get(<ENDPOINT>, callback fn);
-    }
+        $.get('http://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&sensor=true',function(data){
+            locBoxThis.setState({loading : false});
+            //TODO:check if length <=2 
+            results = data['results'];
+            console.log(results.length);
+            addresses = results[0]['address_components'];
+            for(var i=0;i<addresses.length;i++){
+                address = addresses[i];
+                type = address['types'][0];
+                if('postal_code' === type){
+                    locBoxThis.setState(postal_code:address['short_name']});
+                }
+                if( 'locality'===type){
+                    locBoxThis.setState({city:address['short_name']});
+                }
+                if('administrative_area_level_1' === type){
+                    locBoxThis.setState({country:address['short_name']});
+                }
+                    
+            }
+        });
+
+    },
 
     render: function() {
         // TODO: create popup, new component
@@ -44,7 +68,7 @@ var LocationBox = React.createClass({
         } else {
             return (
                 <div id="locationBox">
-                    <div id="locationText">You are at {this.state.lat}, {this.state.lng}</div>
+                    <div id="locationText">You are at {this.state.city}, {this.state.country}</div>
                     <Button id="linkBtn">Wrong Location?</Button>
                 </div>
             );
