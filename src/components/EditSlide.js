@@ -12,7 +12,7 @@ var EditSlide = React.createClass({
     render: function() {
         // TODO: create popup, new component
         return (
-            <div class="slide">
+            <div class="slide" id="EditSlide">
                 <EditCard></EditCard>
                 <div class="buttons">    
                     <Button class="btnLeft">Design</Button>

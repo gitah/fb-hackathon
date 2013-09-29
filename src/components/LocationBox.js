@@ -34,7 +34,7 @@ var LocationBox = React.createClass({
     getCity: function(lat, lng) {
         // make API call via jquery
         // $.get(<ENDPOINT>, callback fn);
-    }
+    },
 
     render: function() {
         // TODO: create popup, new component

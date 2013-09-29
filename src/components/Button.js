@@ -2,12 +2,12 @@
 
 var Button = React.createClass({
   getDefaultProps: function() {
-    return {href: 'javascript:;'};
+    return {};
   },
 
   render: function() {
     return this.transferPropsTo(
-        <a role="button" class="btn">{this.props.children}</a>
+        <a role="button" class="btn" href={this.props.link}>{this.props.children}</a>
     );
   }
 });

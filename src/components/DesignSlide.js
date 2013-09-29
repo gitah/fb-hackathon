@@ -10,7 +10,7 @@ var DesignSlide = React.createClass({
 
   render: function() {
     return this.transferPropsTo(
-        <div class="slide">
+        <div class="slide" id="DesignSlide">
             <PictureSelector></PictureSelector>
             <div class="buttons">
               <Button class="btnLeft">Edit Info</Button>
