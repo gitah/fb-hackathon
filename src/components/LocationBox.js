@@ -38,7 +38,6 @@ var LocationBox = React.createClass({
         // $.get(<ENDPOINT>, callback fn);
         $.get('http://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&sensor=true',function(data){
             locBoxThis.setState({loading : false});
-            //TODO:check if length <=2 
             results = data['results'];
             console.log(results.length);
             addresses = results[0]['address_components'];
@@ -46,8 +45,8 @@ var LocationBox = React.createClass({
                 address = addresses[i];
                 type = address['types'][0];
                 if('postal_code' === type){
-                    locBoxThis.setState(postal_code:address['short_name']});
                 }
+
                 if( 'locality'===type){
                     locBoxThis.setState({city:address['short_name']});
                 }
@@ -57,7 +56,6 @@ var LocationBox = React.createClass({
                     
             }
         });
-
     },
 
     render: function() {

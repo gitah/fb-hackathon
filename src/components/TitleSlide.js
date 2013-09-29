@@ -10,12 +10,9 @@ var TitleSlide = React.createClass({
 
   render: function() {
     return this.transferPropsTo(
-        <div class="slide">
+        <div class="slide" id="TitleSlide">
             <h1 id="appTitle">Postcard Maker</h1>
             <LocationBox></LocationBox>
-            <div class="buttons">
-              <Button id="btnChoose">Choose My Post Card</Button>
-            </div>
         </div>
     );
   }
