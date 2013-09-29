@@ -21,7 +21,6 @@
 
 
 .content {
-  padding-top: 55px;
 }
 
 
@@ -92,7 +91,7 @@ margin-bottom:50px;
 .mainPicture {
     width: 400px;
     height: 400px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 
@@ -103,20 +102,26 @@ margin-bottom:50px;
 	display:inline-block;
 	margin-right:20px;
 	height:450px;
-	margin-top:-20px;
 }
 
 .stampSelector{
-	margin-bottom:50px;
+
+
+}
+
+.address{
+
 }
 
 .side{
 	display:inline-block;
-	height:450px;
-	padding-top:50px;
-	margin-top:0px;
+	padding:10px;
+	box-sizing: border-box;
 }
 
+.red{
+	background-color: red;
+}
 
 .blockTA{
 	display:block;
